@@ -124,8 +124,8 @@
                 $key='<div class="page">';
                 $key.="<span>$page/$pages</span> "; //第几页,共几页
                 if($page!=1){
-                $key.="<a href=\"".$_SERVER['PHP_SELF']."?start_date=$start_date&end_date=$end_date&url=$url&qs=$qs&xdfs=$xdfs&wfdirectorxs=$wfdirectorxs&wfdirector=$wfdirector&wfstatus=$wfstatus&product=$product$page=1\">第一页</a> "; //第一页
-                $key.="<a href=\"".$_SERVER['PHP_SELF']."?start_date=$start_date&end_date=$end_date&url=$url&qs=$qs&xdfs=$xdfs&wfdirectorxs=$wfdirectorxs&wfdirector=$wfdirector&wfstatus=$wfstatus&product=$product&page=".($page-1)."\">上一页</a>"; //上一页
+                $key.="<a href=\"".$_SERVER['PHP_SELF']."?start_date=$start_date&end_date=$end_date&url=$url&$page=1\">第一页</a> "; //第一页
+                $key.="<a href=\"".$_SERVER['PHP_SELF']."?start_date=$start_date&end_date=$end_date&url=$url&page=".($page-1)."\">上一页</a>"; //上一页
                 }else {
                 $key.="第一页 ";//第一页
                 $key.="上一页"; //上一页
@@ -150,12 +150,12 @@
                 if($i==$page){
                 $key.=' <span>'.$i.'</span>';
                 } else {
-                $key.=" <a href=\"".$_SERVER['PHP_SELF']."?start_date=$start_date&end_date=$end_date&url=$url&qs=$qs&xdfs=$xdfs&wfdirectorxs=$wfdirectorxs&wfdirector=$wfdirector&wfstatus=$wfstatus&product=$product&page=".$i."\">".$i."</a>";
+                $key.=" <a href=\"".$_SERVER['PHP_SELF']."?start_date=$start_date&end_date=$end_date&url=$url&page=".$i."\">".$i."</a>";
                 }
                 }
                 if($page!=$pages){
-                $key.=" <a href=\"".$_SERVER['PHP_SELF']."?start_date=$start_date&end_date=$end_date&url=$url&qs=$qs&xdfs=$xdfs&wfdirectorxs=$wfdirectorxs&wfdirector=$wfdirector&wfstatus=$wfstatus&product=$product&page=".($page+1)."\">下一页</a> ";//下一页
-                $key.="<a href=\"".$_SERVER['PHP_SELF']."?start_date=$start_date&end_date=$end_date&url=$url&qs=$qs&xdfs=$xdfs&wfdirectorxs=$wfdirectorxs&wfdirector=$wfdirector&wfstatus=$wfstatus&product=$product&page={$pages}\">最后一页</a>"; //最后一页
+                $key.=" <a href=\"".$_SERVER['PHP_SELF']."?start_date=$start_date&end_date=$end_date&url=$url&page=".($page+1)."\">下一页</a> ";//下一页
+                $key.="<a href=\"".$_SERVER['PHP_SELF']."?start_date=$start_date&end_date=$end_date&url=$url&page={$pages}\">最后一页</a>"; //最后一页
                 }else {
                 $key.="下一页 ";//下一页
                 $key.="最后一页"; //最后一页
