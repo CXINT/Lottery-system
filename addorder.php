@@ -8,7 +8,7 @@
 <link href="img/log.ico" type="image/x-icon" rel="shortcut icon" />
 <script type="text/javascript" src="js/jquery-1.5.1.js"></script>
 <script type="text/javascript" src="js/js.js"></script>
-<title>广州逆水网络公司订单系统管理后台</title>
+<title>抽奖管理后台</title>
 </head>
 <body bgcolor="#626262">
 <?php
@@ -18,12 +18,12 @@ if (($_SESSION['user'])=="tuig"){
 }
 ?>
 <?php include("public/top.php");?>
-    <div class="clear"></div> 
+    <div class="clear"></div>
 <?php include("public/title.php");?>
     <div class="clear"></div>
     <div class="war" style="padding-top:10px; padding-bottom:30px;">
         <?php include("public/left.php");?>
-        
+
         <!--右边开始-->
         <div class="right">
         		<div class="right_tit" style="text-align:center;">
@@ -68,7 +68,7 @@ if (($_SESSION['user'])=="tuig"){
                           <label><input type="radio" name="xd"  value="后台"/>后台</label>&nbsp;&nbsp;&nbsp;&nbsp;
                           <label><input type="radio" name="xd"  value="淘单"/>淘单</label>&nbsp;&nbsp;&nbsp;&nbsp;
                           <label><input type="radio" name="xd"  value="微信"/>微信</label>&nbsp;&nbsp;&nbsp;&nbsp;
-                          <label><input type="radio" name="xd"  value="其他"/>其他</label>  
+                          <label><input type="radio" name="xd"  value="其他"/>其他</label>
 
                         </span></td>
                       </tr>
@@ -88,7 +88,7 @@ if (($_SESSION['user'])=="tuig"){
                                 <label><input type="radio" name="zt" value="待淘"/> 待淘</label>&nbsp;&nbsp;
                                 <label><input type="radio" name="zt" value="未成交"/>未成交</label>
                                 </p>
-                        
+
                         </td>
                     </tr>
                       <tr>
@@ -111,7 +111,7 @@ if (($_SESSION['user'])=="tuig"){
                                 <label><input type="radio" name="xszt" value="取消"/> 取消</label>&nbsp;&nbsp;&nbsp;
                                 <label><input type="radio" name="xszt" value="退货"/> 退货</label>
                                 </p>
-                        
+
                         </td>
                     </tr>
                       <tr>

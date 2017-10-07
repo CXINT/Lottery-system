@@ -43,7 +43,7 @@ if (isset($_SESSION['user']) && !empty($_SESSION['user'])) {
                 <input name="username" type="text" style="width:262px;border-radius: 7px; height:45px; font-size:20px; text-align:center;">
                 <div style="clear:both;"></div>
                 <input name="password"  type="password" style="width:262px;border-radius: 7px; height:45px;  margin-top:16px; text-align:center;">
-                <input value=""  type="submit" style="width:65px; height:125px; position:absolute; top:375px; left:285px; background:none; border:none; cursor:pointer;">            
+                <input value=""  type="submit" style="width:65px; height:125px; position:absolute; top:375px; left:285px; background:none; border:none; cursor:pointer;">
             </form>
            	</div>
          </div>
@@ -66,31 +66,21 @@ if (isset($_SESSION['user']) && !empty($_SESSION['user'])) {
                 <div style="clear:both;"></div>
                 <input name="password"  type="password" style="width:262px;border-radius: 7px; height:45px;  margin-top:16px; text-align:center;">
                 <input value=""  type="submit" style="width:65px; height:125px; position:absolute; top:375px; left:285px; background:none; border:none; cursor:pointer;">
-                <input type="hidden" name="ck"  value="login"/>           
+                <input type="hidden" name="ck"  value="login"/>
             </form>
            	</div>
 	</div>
 </div>-->
-<div style="position: fixed; width:705px; height:518px; background:url(../img/htbgg.png) no-repeat; margin: auto;left: 0px;right: 0px;top: 0px;bottom: 0px;display: block;">	
-	            <form action="../action/session.php" method="post" style="margin-top:265px; margin-left:265px;">
-                <input name="username" type="text" style="width:215px; height:30px; text-align:left; text-indent:8px; background:#1a76c1; border:none;">
-                <div style="clear:both;"></div>
-                <input name="password"  type="password" style="width:215px; height:30px;  margin-top:17px;text-indent:8px; text-align:left;background:#1a76c1; border:none;">
-                <div style="clear:both; margin-top:20px;"></div>
-                <input value="登录"  type="submit" style=" width:103px; height:34px; color:#597a8b; letter-spacing:4px; cursor:pointer;">&nbsp;
-                <input value="重置"  type="reset" style="  width:103px; height:34px; color:#597a8b; letter-spacing:4px;cursor:pointer;">
-                <input type="hidden" name="ck"  value="login"/>           
-            </form>
-    
+<div style="position: fixed; width:705px; height:518px; background:url(../img/htbgg.png) no-repeat; margin: auto;left: 0px;right: 0px;top: 0px;bottom: 0px;display: block;">
+	  <form action="../action/session.php" method="post" style="margin-top:265px; margin-left:265px;">
+	      <input name="username" type="text" style="width:215px; height:30px; text-align:left; text-indent:8px; background:#1a76c1; border:none;">
+	      <div style="clear:both;"></div>
+	      <input name="password"  type="password" style="width:215px; height:30px;  margin-top:17px;text-indent:8px; text-align:left;background:#1a76c1; border:none;">
+	      <div style="clear:both; margin-top:20px;"></div>
+	      <input value="登录"  type="submit" style=" width:103px; height:34px; color:#597a8b; letter-spacing:4px; cursor:pointer;">&nbsp;
+	      <input value="重置"  type="reset" style="  width:103px; height:34px; color:#597a8b; letter-spacing:4px;cursor:pointer;">
+	      <input type="hidden" name="ck"  value="login"/>
+	  </form>
 </div>
-
-
-
-
-
-
-
-
-
 </body>
 </html>

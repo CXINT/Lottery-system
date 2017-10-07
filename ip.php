@@ -6,7 +6,7 @@
 </head>
 
 <body>
-<?php 
+<?php
 	$iipp = $_SERVER["REMOTE_ADDR"];
 	echo $iipp ;
 ?>
@@ -19,7 +19,7 @@
 
 <form method="post" action="action/addurl.php">
 	你是:<input  name="name" type="text"/>
-	路劲:<input  name="url" type="text" style="width:250px;"/>
+	路径:<input  name="url" type="text" style="width:250px;"/>
     <input type="radio" name="type" value="pc">PC
     <input type="radio" name="type" value="wap">WAP
     <input  type="submit" value="提交"/>
